@@ -91,7 +91,7 @@ const transactionRoutes = (transactionConnection) => {
             }
             const rentPerDay = book.rent_Per_Day; // Get rent per day from the book document
             const issueDate = new Date(transaction.issue_date);
-            const returnDate = new Date(); // Set to current date
+            const returnDate = return_date;
             const rentDays = Math.ceil((returnDate - issueDate) / (1000 * 60 * 60 * 24)); // Calculate total days
             const totalRent = rentDays * rentPerDay; // Calculate total rent
     
