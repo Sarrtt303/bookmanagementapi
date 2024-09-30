@@ -14,7 +14,7 @@ const app = express();
 
 // Apply CORS middleware globally 
 app.use(cors({
-    origin: ['https://bookmanager88.netlify.app/'], // Specify allowed origins
+    origin: ['https://bookmanager88.netlify.app'], // Specify allowed origins
     methods: ['GET', 'POST', 'PUT', 'DELETE'], // Specify allowed HTTP methods
     allowedHeaders: ['Content-Type', 'Authorization'], // Specify allowed headers
     credentials: true // Handle cookies or HTTP authentication if necessary
